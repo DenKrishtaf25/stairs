@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VMWR</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__inner">
+                    <div class="logo"><img src="./img/logo.png" alt=""></div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="#quiz">Квиз по VDI</a></li>
+                            <li class="menu__list-item"><a href="#advantage">Приемущества</a></li>
+                            <li class="menu__list-item"><a href="#cases">Сценарии</a></li>
+                            <li class="menu__list-item"><a href="#masthave">VMware Horizon</a></li>
+                            <li class="menu__list-item"><a href="#table">Таблица редакций</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo logo-s"><img src="./img/logo-s.jpg" alt=""></div>
+                </div>
+
+                <div class="overlay">
+                    <nav class="overlayMenu">
+                        <ul role="menu">
+                            <li><a class="scroll" href="#quiz" role="menuitem">Квиз по VDI</a></li>
+                            <li><a class="scroll" href="#advantage" role="menuitem">Приемущества</a></li>
+                            <li><a class="scroll" href="#cases" role="menuitem">Сценарии</a></li>
+                            <li><a class="scroll" href="#masthave" role="menuitem">VMware Horizon</a></li>
+                            <li><a class="scroll" href="#table" role="menuitem">Таблица редакций</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navnav">
+                    <div class="navBurger" role="navigation" id="navToggle"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="main__wrapper">
+            <img class="main-bg" src="./img/main-bg.svg" alt="">
+            <div class="container">
+                <div class="main__inner">
+                    <h1 class="main__title">
+                        Узнай почему виртуальные рабочие
+                        места от&nbsp;Horizon &mdash;&nbsp;это выгодно
+                    </h1>
+                    <p class="main__text">
+                        Единая цифровая рабочая среда,
+                        которая предоставит максимум выгоды от технологии VDI.
+                    </p>
+                    <a href="#callb" class="main__btn">начать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quiz" id="quiz">
+        <div class="container">
+            <div class="quiz__wrapper" id="front">
+                <h2 class="quiz__title title">Квиз по VDI</h2>
+                <div class="quiz__inner">
+                    <img src="./img/quiz.svg" alt="">
+                    <div><button class="quiz__btn" id="start-btn">Тест на знание технологий VMware</button></div>
+                </div>
+            </div>
+            <div class="answs hide" id="answs">
+                <h2 class="answs__title title" id="question">question</h2>
+                <div class="answs__wrapper" id="answer-buttons">
+                    <button class="btn">
+                        1
+                    </button>
+                    <button class="btn">
+                        1
+                    </button>
+                    <button class="btn">
+                        1
+                    </button>
+                    <button class="btn">
+                        1
+                    </button>
+                </div>
+                <button class="next hide" id="next-btn">Далее</button>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="advantage" id="advantage">
+        <div class="ar arl" id="my-arrow-prev"><img src="./img/arl.png" alt=""></div>
+        <div class="ar arr" id="my-arrow-next"><img src="./img/arr.png" alt=""></div>
+        <div class="container">
+            <h2 class="advantage__title title">
+                Десять ключевых преимуществ
+                технологии Horizon
+            </h2>
+            <div class="advantage__slider">
+                <div class="advantage__slider-slide">
+                    <div class="img"><img src="./img/slide1.svg" alt=""></div>
+                    <h3>Безопасность данных</h3>
+                    <p>Все данные хранятся и защищаются централизованно в Дата-Центре
+                        компании, а не на устройстве сотрудника. Если устройство утеряно, никто не получит к ней доступ.
+                        Виртуальный ПК всегда
+                        можно заблокировать и поставить многофакторную систему аутентификации.</p>
+                </div>
+                <div class="advantage__slider-slide">
+                    <div class="img"><img src="./img/slide2.svg" alt=""></div>
+                    <h3>Возможность удалённой
+                        работы</h3>
+                    <p>Сотрудник может подключаться и работать в&nbsp;среде корпоративных данных
+                        с любой точки планеты – из дома, командировки, объектов и т.д.
+                        Достаточно иметь интернет. Соединение ведётся по шифрованному&nbsp;каналу.</p>
+                </div>
+                <div class="advantage__slider-slide">
+                    <div class="img"><img src="./img/slide3.svg" alt=""></div>
+                    <h3>Простая организация
+                        посменной работы</h3>
+                    <p>Если сотрудник работает в смене, то одним виртуальным ПК могут
+                        пользоваться сотрудники по очереди в зависимости от&nbsp;смены.</p>
+                </div>
+                <div class="advantage__slider-slide">
+                    <div class="img"><img src="./img/slide4.svg" alt=""></div>
+                    <h3>Простое администрирование</h3>
+                    <p>Администрировать пользователей VDI сервиса от VMware Horizon можно даже в отпуске,
+                        стандартизировать образы ОС на основе
+                        ролей пользователей и моментально развёртывать ПО по группам.</p>
+                </div>
+                <div class="advantage__slider-slide">
+                    <div class="img"><img src="./img/slide5.svg" alt=""></div>
+                    <h3>Сокращение совокупной стоимости владения</h3>
+                    <p>За счёт снижения расходов на администрирование всех ПК, а также отсутствия необходимости
+                        постоянно обновлять парк
+                        компьютерной техники.</p>
+                </div>
+                <div class="advantage__slider-slide">
+                    <div class="img"><img src="./img/slide6.svg" alt=""></div>
+                    <h3>BYOD и доступ с любых устройств</h3>
+                    <p>Подключиться к своему виртуальному рабочему столу можно с любого устройства – личного ПК
+                        сотрудника, телефона, планшета
+                        или старого ПК на ОС Linux.</p>
+                </div>
+                <div class="advantage__slider-slide">
+                    <div class="img"><img src="./img/slide7.svg" alt=""></div>
+                    <h3>Быстрое создание новых рабочих мест</h3>
+                    <p>Для создания нового рабочего места достаточно выбрать его характеристики и сгенерировать новое
+                        цифровое место для
+                        сотрудника.</p>
+                </div>
+                <div class="advantage__slider-slide">
+                    <div class="img"><img src="./img/slide8.svg" alt=""></div>
+                    <h3>Управление с одной точки</h3>
+                    <p>Для управления всей цифровой средой в компании есть единая консоль управления. Можно в режиме
+                        реального времени
+                        увеличивать и уменьшать технические характеристики ПК сотрудников.</p>
+                </div>
+                <div class="advantage__slider-slide">
+                    <div class="img"><img src="./img/slide9.svg" alt=""></div>
+                    <h3>Программное цифровое пространство</h3>
+                    <p>Нет необходимости думать об обновлении ПК в компании или останавливать сервис перед заменой
+                        серверного окружения.</p>
+                </div>
+                <div class="advantage__slider-slide">
+                    <div class="img"><img src="./img/slide10.svg" alt=""></div>
+                    <h3>Продуктивная работа с тяжёлым ПО</h3>
+                    <p>VMware Horizon поддерживает работу тяжёлой трёхмерной графики, по этому, если сотрудники компании
+                        работают на
+                        требовательных программных продуктах, то можно не ограничивать себя</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="cases" id="cases">
+        <div class="ar arl" id="my-arr-prev"><img src="./img/arl.png" alt=""></div>
+        <div class="ar arr" id="my-arr-next"><img src="./img/arr.png" alt=""></div>
+        <div class="container">
+            <h2 class="cases__title title">
+                VDI Use Cases
+            </h2>
+            <div class="cases__slider">
+                <div class="cases__slider-slide">
+                    <h3>Shift Workers</h3>
+                    <div class="block">
+                        <p>For companies that staff primarily shift workers, VDI provides a convenient way to manage
+                            multiple desktop accounts on
+                            fewer end points.
+                            <br><br>
+                            Shift workers that require a PC to fulfil their job duties often do not need a designated
+                            computer, and providing them
+                            one adds a significant amount of complexity and cost.
+                            <br><br>
+                            The IT department can streamline this process, maintain fewer endpoints in the company, and
+                            still provide all the
+                            necessary tools for their shift workers by leveraging a VDI deployment.
+                            <br><br>
+                            With VDI, workers on each shift will log into the same few endpoints, access their own
+                            virtual desktop, and work as
+                            normal. At the end of the shift, they log off, head home, and can access their own unique
+                            desktop the next day.
+                        </p>
+                        <img src="./img/case1.svg" alt="">
+                    </div>
+                </div>
+                <div class="cases__slider-slide">
+                    <h3>Healthcare</h3>
+                    <div class="block">
+                        <p>VDI enables the administration team to customize rules and permissions based on the
+                            individual virtual desktop. This
+                            becomes extremely convenient in healthcare settings where privacy is a concern. By
+                            designating specific permissions,
+                            each medical professional can have their own virtual desktop that only allows them to see
+                            their relevant patient
+                            records. Furthermore, they can move from device to device throughout the day, boot up their
+                            virtualized desktop, and
+                            access the records they need.</p>
+                        <img src="./img/case2.svg" alt="">
+                    </div>
+                </div>
+                <div class="cases__slider-slide">
+                    <h3>Educational Institutions</h3>
+                    <div class="block">
+                        <p>School environments align perfectly with the benefits of VDI. In a school, students are in the building during
+                        predictable hours and only attend the institution for a finite amount of time. Plus, students should have strict
+                        restrictions on what they can and cannot do with their school-provided PCs and laptops.With VDI, the IT team can provide
+                        each student their own virtual desktop with any necessary restrictions for the duration of their enrollment. Then when
+                        they graduate, the IT team can delete the virtual desktop with just a few clicks.</p>
+                        <img src="./img/case3.svg" alt="">
+                    </div>
+                </div>
+                <div class="cases__slider-slide">
+                    <h3>Users with Multiple PCs</h3>
+                    <div class="block">
+                        <p>For one reason or another, some positions in the business world may require a professional to regularly work on more
+                        than one PC. VDI allows that professional to consolidate their desktop experience and maintain the same desktop across
+                        both devices.</p>
+                        <img src="./img/case4.svg" alt="">
+                    </div>
+                </div>
+                <div class="cases__slider-slide">
+                    <h3>Remote Users / Sales / Field Technicians</h3>
+                    <div class="block">
+                        <p>Employees on the road, whether they are simply working remotely, in sales, or field technicians, need to have a reliable
+                        way to access their applications and tools. VDI offers a secure way to enable anytime, anywhere, and any device access
+                        to a consistent, high-performing desktop experience. Regardless of the circumstance, a complete VDI solution enables
+                        your remote workforce to operate effectively. VDI can even be used in this circumstance to enable BYOD capabilities.</p>
+                        <img src="./img/case4.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="masthave" id="masthave">
+        <div class="container">
+            <div class="masthave__inner">
+                <img src="./img/masrhave.svg" alt="">
+                <div class="masthave__inner-block">
+                    <h3>
+                        VMware Horizon нужен Вам,
+                        если вы хотите реализовать:
+                    </h3>
+                    <ul>
+                        <li><span>Получить контроль доступа сотрудников к корпоративным данным</span></li>
+                        <li><span>Устранить перерывы в работе из-за ремонта устаревших ПК, постоянных обновлений и
+                                настройки ПО</span></li>
+                        <li><span>Превратить капитальные затраты в операционные</span></li>
+                        <li><span>Организовать работу мобильных сотрудников</span></li>
+                        <li><span>Устранить случаи, когда обновления в филиальной сети вызывают сбои в работе и
+                                раздувают штат администраторов — на каждом объекте требуется команда техников</span>
+                        </li>
+                        <li><span>«Зоопарк» технологий и устройств</span></li>
+                        <li><span>Компания активно привлекает сотрудников с других стран и городов</span></li>
+                        <li><span>Компания стримится обеспечить высокий уровень безопасности корпоративных данных</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lpc">
+        <h2 class="lpc__title title">VDI против Локальных ПК</h2>
+        <div class="lpc__wrapper">
+            <div class="container">
+                <div class="lpc__inner">
+                    <div class="lpc__inner-block">
+                        <img src="./img/lpc1.svg" alt="">
+                        <p>40% - в среднем снижение совокупной
+                            стоимости владения IT-Инфраструктурой</p>
+                    </div>
+                    <div class="lpc__inner-block">
+                        <img src="./img/lpc2.svg" alt="">
+                        <p>5-7 минут – на создание нового
+                            цифрового места сотрудника</p>
+                    </div>
+                    <div class="lpc__inner-block">
+                        <img src="./img/lpc3.svg" alt="">
+                        <p>2-4 года срок возврата инвестиций против
+                            5-7 лет на покупке традиционных ПК</p>
+                    </div>
+                    <div class="lpc__inner-block">
+                        <img src="./img/lpc4.svg" alt="">
+                        <p>+20% к привлекательности компании
+                            со стороны кадров</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="usually">
+        <div class="container">
+            <div class="usually__inner">
+                <div class="usually__block">
+                    <h2 class="usually__title usually__titlef">Как обычно делают</h2>
+                    <div class="usually__block-inner">
+                        <img src="./img/num1.svg" alt="">
+                        <p>Только предпродажная
+                            отработка запроса на VDI
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num2.svg" alt="">
+                        <p>Стандартная поставка
+                            лицензий
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num3.svg" alt="">
+                        <p>Консультация только до
+                            передачи лицензии
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num4.svg" alt="">
+                        <p>Реализация проекта на основе
+                            стандартных практик
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num5.svg" alt="">
+                        <p>Предоставление обучающих
+                            видео или документации
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num6.svg" alt="">
+                        <p>Предоставление отчётной
+                            документации
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num7.svg" alt="">
+                        <p>Поддержка только от
+                            производителя
+                        </p>
+                    </div>
+                </div>
+
+                <div class="usually__block">
+                    <h2 class="usually__title usually__titles">Как делаем мы</h2>
+                    <div class="usually__block-inner">
+                        <img src="./img/num1.svg" alt="">
+                        <p>Предварительное глубокое
+                            обследование сети, составление плана
+                            перехода, сайзинг
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num2.svg" alt="">
+                        <p>Предоставление специальных
+                            цен под проект, дэмо доступа и пилота
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num3.svg" alt="">
+                        <p>Консультация на всех этапах
+                            проекта
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num4.svg" alt="">
+                        <p>Ведение проекта в
+                            специализированном программном
+                            обеспечении управления проектами
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num5.svg" alt="">
+                        <p>Обучение системных
+                            администраторов
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num6.svg" alt="">
+                        <p>Сдача проекта с визуализацией
+                            и детальным описанием каждого
+                            интерфейса
+                        </p>
+                    </div>
+                    <div class="usually__block-inner">
+                        <img src="./img/num7.svg" alt="">
+                        <p>1 год поддержки от AYACOM
+                            через Service Desk
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="table" id="table">
+        <div class="container">
+            <h2 class="table__title title">
+                Таблица редакций
+            </h2>
+            <div class="table__wrap">
+                <div class="table__column-one">
+                    <div class="table__heading-wrapper">
+                        <h4 class="table__heading">
+                            ВОЗМОЖНОСТЬ
+                        </h4>
+                        <h4 class="table__heading">
+                            КОМПОНЕНТ/ПРОДУКТ
+                        </h4>
+                    </div>
+                    <div class="line"></div>
+                    <span>
+                        Лицензионные права
+                    </span>
+                    <p class="table__text">
+                        По числу параллельных подключений (CCU)
+                    </p>
+                    <p class="table__text">
+                        По числу именованных пользователей<br>
+                        (Named Users)
+                    </p>
+
+                    <span class="table__advanced">
+                        Виртуальные компьютеры и приложения
+                    </span>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Виртуальные компьютеры Windows
+                        </p>
+                        <p class="table__text">
+                            VMware Horizon
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Компьютеры Linux
+                        </p>
+                        <p class="table__text">
+                            VMware Horizon for Linux
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Единая рабочая область: XA, RDSH,<br>
+                            ПО как услуга, ThinApp
+                        </p>
+                        <p class="table__text">
+                            VMware Identity Manager Std
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Опубликованные приложения (RDSH) и<br>
+                            виртуальные компьютеры на основе сеансов
+                        </p>
+                        <p class="table__text">
+                            Опубликованные приложения<br>
+                            на базе RDS
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Пакетные приложения
+                        </p>
+                        <p class="table__text">
+                            VMware ThinApp
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Протокол Blast Extreme
+                        </p>
+                        <p class="table__text">
+                            VMware Horizon
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Сеанс совместной работы
+                        </p>
+                        <p class="table__text">
+                            VMware Horizon
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Virtualization Pack для приложения Skype<br>
+                            для бизнеса
+                        </p>
+                        <p class="table__text">
+                            VMware Horizon
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Единый вход для доступа к приложениям<br>
+                            и виртуальным компьютерам
+                        </p>
+                        <p class="table__text">
+                            VMware Identity Manager Standard
+                        </p>
+                    </div>
+                    <span class="table__advanced">
+                        Управление образами
+                    </span>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Управление образами физических компьютеров
+                        </p>
+                        <p class="table__text">
+                            VMware Mirage
+                        </p>
+                    </div>
+                    <span class="table__advanced">
+                        Управление виртуальными компьютерами и приложениями
+                    </span>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Предоставление приложений в режиме<br>
+                            реального времени
+                        </p>
+                        <p class="table__text">
+                            VMware App Volumes
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Предоставление ресурсов по запросу<br>
+                            с помощью технологии мгновенного клонирования
+                        </p>
+                        <p class="table__text">
+                            VMware Horizon
+                        </p>
+                    </div>
+                    <span class="table__advanced">
+                        Управление средами пользователей
+                    </span>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Управление пользователями, профилями<br>
+                            и политиками
+                        </p>
+                        <p class="table__text">
+                            VMware User Environment Manager
+                        </p>
+                    </div>
+                    <span class="table__advanced">
+                        Средства анализа облачных процессов и управления ими
+                    </span>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Средство Help Desk Tool
+                        </p>
+                        <p class="table__text">
+                            VMware Horizon
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Панель мониторинга: мониторинг<br>
+                            работоспособности и средства анализа<br>
+                            производительности
+                        </p>
+                        <p class="table__text">
+                            VMware vRealize Operations for Horizon
+                        </p>
+                    </div>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Управление ресурсами: планирование<br>
+                            и оптимизация
+                        </p>
+                        <p class="table__text">
+                            VMware vRealize Operations for Horizon
+                        </p>
+                    </div>
+                    <span class="table__advanced">
+                        Хранилище
+                    </span>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Виртуальное хранилище
+                        </p>
+                        <p class="table__text">
+                            VMware vSAN Advanced for Desktop<br>
+                            (на основе флэш-накопителей)
+                        </p>
+                    </div>
+                    <span class="table__advanced">
+                        Инфраструктура виртуальных компьютеров
+                    </span>
+                    <div class="table__text-wrapper">
+                        <p class="table__text">
+                            Инфраструктура виртуальных компьютеров
+                        </p>
+                        <p class="table__text">
+                            VMware vSphere Desktop<br>
+                            & VMware vCenter Desktop
+                        </p>
+                    </div>
+                </div>
+
+                <div class="table__column-two table__column-three">
+                    <h4 class="table__heading table__heading_two">
+                        HORIZON<br>
+                        STANDARD
+                    </h4>
+                    <span>
+                        ✓
+                    </span>
+                    <span style="opacity: 0; margin-bottom: 95px;">
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                    <span style="opacity: 0;">
+                        ✓
+                    </span>
+                    <span style="opacity: 0;">
+                        ✓
+                    </span>
+                    <span style="opacity: 0; margin-bottom: 60px;">
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 1242px;">
+                        ✓
+                    </span>
+                    <span class="last">
+                        ✓
+                    </span>
+                </div>
+                <div class="table__column-two table__column-four">
+                    <h4 class="table__heading table__heading_two">
+                        HORIZON<br>
+                        ADVANCED
+                    </h4>
+                    <span>
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 95px;">
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                    <span style="opacity: 0;">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 60px;">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 20px;">
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                    <span style="opacity: 0;">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 50px;">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 120px;" class="last">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 930px;" class="last">
+                        ✓
+                    </span>
+                    <span class="last">
+                        ✓
+                    </span>
+
+                </div>
+                <div class="table__column-two table__column-five">
+                    <h4 class="table__heading table__heading_two table__heading_five">
+                        HORIZON<br>
+                        ENTERPRISE
+                    </h4>
+                    <span>
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 95px;">
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 60px;">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 20px;">
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                    <span class="last">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 50px;" class="last">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 120px;" class="last">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 95px;" class="last">
+                        ✓
+                    </span>
+                    <span class="last last_last">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 140px;">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 120px;">
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 75px;">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 130px;">
+                        ✓
+                    </span>
+                    <span style="margin-bottom: 130px;">
+                        ✓
+                    </span>
+                    <span>
+                        ✓
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <h2 class="map__title title">Дорожная карта</h2>
+            <div class="map__inner">
+                <img src="./img/map.svg" alt="">
+                <div class="boxes">
+                    <div class="boxes__box">
+                        <div class="boxes__box-num">1</div>
+                        <p>Оставьте заявку</p>
+                        <div class="boxes__box-days" style="opacity: 0;"></div>
+                    </div>
+                    <div class="boxes__box">
+                        <div class="boxes__box-num">2</div>
+                        <p>Презентация</p>
+                        <div class="boxes__box-days">2-3 дня</div>
+                    </div>
+                    <div class="boxes__box">
+                        <div class="boxes__box-num">3</div>
+                        <p>Аудит проекта</p>
+                        <div class="boxes__box-days">2-3 дня</div>
+                    </div>
+                    <div class="boxes__box">
+                        <div class="boxes__box-num">4</div>
+                        <p>Пилотный проект<br>
+                            (опционально)</p>
+                        <div class="boxes__box-days" style="opacity: 0;"></div>
+                    </div>
+                    <div class="boxes__box">
+                        <div class="boxes__box-num">5</div>
+                        <p>Спецификация и<br>сайзинг</p>
+                        <div class="boxes__box-days" style="opacity: 0;"></div>
+                    </div>
+                    <div class="boxes__box">
+                        <div class="boxes__box-num">6</div>
+                        <p>Реализация<br>
+                            проекта</p>
+                        <div class="boxes__box-days">5-7 дней</div>
+                    </div>
+                    <div class="boxes__box">
+                        <div class="boxes__box-num">7</div>
+                        <p>Опытная<br>
+                            эксплуатация</p>
+                        <div class="boxes__box-days">5-7 дней</div>
+                    </div>
+                    <div class="boxes__box">
+                        <div class="boxes__box-num">8</div>
+                        <p>Обучение Администратора</p>
+                        <div class="boxes__box-days" style="opacity: 0;"></div>
+                    </div>
+                    <div class="boxes__box">
+                        <div class="boxes__box-num">9</div>
+                        <p>Поддержка</p>
+                        <div class="boxes__box-days" style="opacity: 0;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aya">
+        <div class="container">
+            <div class="aya__title title">
+                Преимущества AYACOM
+            </div>
+            <div class="aya__inner">
+                <div class="aya__box">
+                    <div class="aya__box-block">
+                        <img src="./img/aya1.png" alt="">
+                        <p>Мы работаем по Казахстану
+                            с 2010 года</p>
+                    </div>
+                    <div class="aya__box-block">
+                        <img src="./img/aya2.png" alt="">
+                        <p>Партнёр компании VMware, со статусом VMware Advanced Partner</p>
+                    </div>
+                    <div class="aya__box-block">
+                        <img src="./img/aya3.png" alt="">
+                        <p>Выполнено более 30 похожих проектов за последние 3 года</p>
+                    </div>
+                    <div class="aya__box-block">
+                        <img src="./img/aya4.png" alt="">
+                        <p>Международная сертификация ISO9001, 45001, 14001</p>
+                    </div>
+                </div>
+
+                <div class="aya__box">
+                    <div class="aya__box-block">
+                        <img src="./img/aya5.png" alt="">
+                        <p>Штат сертифицированных инженеров по vSAN и другим решениям VMware</p>
+                    </div>
+                    <div class="aya__box-block">
+                        <img src="./img/aya6.png" alt="">
+                        <p>Отчет на каждом этапе. Строгое соблюдение сроков</p>
+                    </div>
+                    <div class="aya__box-block">
+                        <img src="./img/aya7.png" alt="">
+                        <p>Используем специализированные интструменты управления</p>
+                    </div>
+                    <div class="aya__box-block">
+                        <img src="./img/aya8.png" alt="">
+                        <p>Мы всегда обучаем клиентов, как правильно пользоваться решением</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="callb" id="callb">
+        <div class="container">
+            <div class="callb__wrapper">
+                <form action="#" class="form">
+                    <h2 class="form__title">Форма обратной связи</h2>
+                    <input type="text" placeholder="Ваше имя:">
+                    <input type="text" class="mask-phone form-control" placeholder="Ваш номер телефона:">
+                    <input type="email" placeholder="Ваше e-mail:">
+                    <button class="btn">Оставить заявку</button>
+                </form>
+                <img src="./img/fotm-bg.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__wrapper-box">
+                    <img src="./img/footl.png" alt="">
+                    <p>2020 © Все права защищены</p>
+                </div>
+                <div class="footer__wrapper-box">
+                    <img class="soc" src="./img/soc1.svg" alt="">
+                    <img class="soc" src="./img/soc2.svg" alt="">
+                    
+                    <img class="soc" src="./img/soc4.svg" alt="">
+                    <img class="soc" src="./img/soc5.svg" alt="">
+                    <img class="soc" src="./img/soc6.svg" alt="">
+                </div>
+                <div class="footer__wrapper-box">
+                    <p>
+                        <span>Телефон для связи:</span><br>
+                        +7 7122 30 66 99</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+  <script src="js/libs.min.js "></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js"
+        type="text/javascript"></script>
+<script src="./js/slick.min.js"></script>
+    
+    <script src="js/main.js "></script>
+</body>
+
+</html>
