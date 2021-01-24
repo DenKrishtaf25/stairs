@@ -89,6 +89,7 @@ header.sticky {
 }
 
 .man {
+    padding-bottom: 44px;
     &__inner {
         max-width: 1920px;
         width: 100%;
@@ -106,7 +107,7 @@ header.sticky {
         justify-content: space-between;
         padding-top: 40px;
         &-left {
-             padding-top: 40px;
+            padding-top: 40px;
             p {
                 font-size: 15px;
                 line-height: 18px;
@@ -138,10 +139,103 @@ header.sticky {
                 &:last-child {
                     margin-top: 20px;
                     padding: 7px;
-                    box-shadow: inset 0px 0px 13px 3px rgba(213, 175, 78, 0.37), 0px 0px 13px 3px rgba(213, 175, 78, 0.37);
+                    box-shadow: inset 0px 0px 13px 3px rgba(213, 175, 78, 0.37),
+                        0px 0px 13px 3px rgba(213, 175, 78, 0.37);
                     border-radius: 17px;
                 }
             }
+        }
+    }
+}
+
+.key {
+    padding: 40px 0;
+    &__title {
+        padding-bottom: 21px;
+        border-bottom: 1px solid #fefefe;
+        margin-bottom: 42px;
+        display: inline-block;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 306px);
+        justify-content: space-between;
+        grid-row-gap: 27px;
+    }
+    &__box {
+        text-align: center;
+        img {
+            border-radius: 10px;
+            margin-bottom: 27px;
+        }
+        h3 {
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+}
+
+.project {
+    padding: 40px 0;
+    &__title {
+        margin-bottom: 30px;
+        padding-bottom: 19px;
+        text-align: right;
+        span {
+            font-weight: 400;
+            padding-bottom: 21px;
+            border-bottom: 1px solid #fff;
+        }
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 272px);
+        justify-content: space-between;
+        grid-row-gap: 17px;
+    }
+    &__box {
+        position: relative;
+        margin-bottom: 17px;
+        .garant {
+            position: absolute;
+            top: -30px;
+            right: 0;
+        }
+    }
+    p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
+
+.carcass {
+    padding: 40px 0;
+    &__title {
+        margin-bottom: 30px;
+        padding-bottom: 19px;
+        span {
+            font-weight: 400;
+            padding-bottom: 21px;
+            border-bottom: 1px solid #fff;
+        }
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 357px);
+        justify-content: space-between;
+        grid-row-gap: 17px;
+    }
+    &__box {
+        h4 {
+            font-size: 22px;
+            font-weight: normal;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 22px;
+            line-height: 27px;
+            margin-bottom: 20px;
         }
     }
 }
