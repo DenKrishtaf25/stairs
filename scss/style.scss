@@ -176,6 +176,14 @@ header.sticky {
 }
 
 .project {
+    background: linear-gradient(
+            180deg,
+            #262626 1%,
+            rgba(107, 14, 14, 0.788) 55%,
+            rgba(60, 13, 13, 0.83) 80%,
+            rgba(16, 31, 49, 0.92) 100%
+        ),
+        #c4c4c4;
     padding: 40px 0;
     &__title {
         margin-bottom: 30px;
@@ -210,6 +218,13 @@ header.sticky {
 }
 
 .carcass {
+    background: linear-gradient(
+            180deg,
+            rgba(16, 31, 49, 0.92) 25%,
+            rgba(16, 31, 49, 0.92) 75%,
+            rgba(11, 30, 30, 0.88) 100%
+        ),
+        #c4c4c4;
     padding: 40px 0;
     &__title {
         margin-bottom: 30px;
@@ -236,6 +251,136 @@ header.sticky {
             font-size: 22px;
             line-height: 27px;
             margin-bottom: 20px;
+        }
+    }
+}
+
+.ander {
+    background: linear-gradient(
+            180deg,
+            rgba(11, 30, 30, 0.88) 25%,
+            rgba(11, 30, 30, 0.82) 75%,
+            rgba(1, 1, 1, 0.82) 100%
+        ),
+        #c4c4c4;
+    padding: 40px 0;
+    &__obl {
+        display: grid;
+        grid-template-columns: repeat(2, 570px);
+        justify-content: space-between;
+        grid-row-gap: 17px;
+        .box {
+            display: flex;
+            justify-content: space-between;
+            h4 {
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: normal;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #fff;
+            }
+            p {
+                font-size: 19px;
+                line-height: 20px;
+            }
+        }
+    }
+    &__title {
+        margin: 45px 0;
+        text-align: right;
+        span {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #fff;
+        }
+    }
+    &__meta {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.mdf {
+    background: linear-gradient(180deg, rgba(1, 1, 1, 0.82) 84.3%, rgba(1, 1, 1, 0.82) 98.09%), #c4c4c4;
+    padding: 40px 0;
+    &__title {
+        margin-bottom: 30px;
+        padding-bottom: 19px;
+        span {
+            font-weight: 400;
+            padding-bottom: 21px;
+            border-bottom: 1px solid #fff;
+        }
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 593px);
+        justify-content: space-between;
+        grid-row-gap: 49px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        p {
+            margin-left: 16px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .btn {
+            display: flex;
+            text-align: center;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: #a82c11;
+            box-shadow: -2px 1px 30px rgba(255, 255, 255, 0.25);
+            border-radius: 6px;
+            width: 100%;
+            max-width: 371px;
+            height: 84px;
+            margin-top: 40px;
+            transition: 0.3s;
+            font-size: 18px;
+            line-height: 22px;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.timh {
+    background: #292929;
+    padding: 23px;
+    &__title {
+        font-size: 33px;
+        padding: 23px;
+        border-radius: 6px;
+        background: #353434;
+        box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.15);
+        margin-bottom: 24px;
+        display: inline-block;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box {
+        background: #262626;
+        box-shadow: 0px 0px 12px rgba(234, 155, 155, 0.13);
+        border-radius: 10px;
+        width: 100%;
+        max-width: 388px;
+        padding: 8px;
+        &-boxik {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                font-size: 15px;
+                line-height: 18px;
+            }
         }
     }
 }
