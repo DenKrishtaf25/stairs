@@ -1,12 +1,12 @@
-$('[data-open-block').on('click', function () {
-    const activeCls = 'is-active';
+// $('[data-open-block').on('click', function () {
+//     const activeCls = 'is-active';
 
-    $('[data-content]').removeClass(activeCls);
-    $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
-});
+//     $('[data-content]').removeClass(activeCls);
+//     $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
+// });
 
 
-$('.mask-phone').mask('9 (999) 999-99-99');
+// $('.mask-phone').mask('9 (999) 999-99-99');
 
 
 
@@ -35,26 +35,26 @@ $('.mask-phone').mask('9 (999) 999-99-99');
 
 
 
-// $("#navToggle").click(function () {
-//     $(this).toggleClass("active");
-//     $(".overlay").toggleClass("open");
-//     // this line ▼ prevents content scroll-behind
-//     $("body").toggleClass("locked");
-// });
+$("#navToggle").click(function () {
+    $(this).toggleClass("active");
+    $(".overlay").toggleClass("open");
+    // this line ▼ prevents content scroll-behind
+    $("body").toggleClass("locked");
+});
 
-// $(".overlay a").click(function () {
-//     $("#navToggle").toggleClass("active");
-//     $(".overlay").toggleClass("open");
-//     $("body").toggleClass("locked");
-// });
+$(".overlay a").click(function () {
+    $("#navToggle").toggleClass("active");
+    $(".overlay").toggleClass("open");
+    $("body").toggleClass("locked");
+});
 
-// $(window).scroll(function () {
-//     if ($(this).scrollTop() > 1) {
-//         $('header').addClass("sticky");
-//     } else {
-//         $('header').removeClass("sticky");
-//     }
-// });
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 1) {
+        $('header').addClass("sticky");
+    } else {
+        $('header').removeClass("sticky");
+    }
+});
 
 
 // var $page = $('html, body');
@@ -77,3 +77,19 @@ $('.mask-phone').mask('9 (999) 999-99-99');
 // });
 
 
+//акардион
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
