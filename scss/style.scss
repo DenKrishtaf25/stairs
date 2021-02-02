@@ -12,7 +12,6 @@ header.sticky {
     position: fixed;
     width: 100%;
     z-index: 5;
-
     .logo img {
         max-width: 228px;
     }
@@ -59,10 +58,12 @@ header.sticky {
 }
 
 .main {
-    max-height: 90vh;
+    // max-height: 90vh;
+    padding-bottom: 80px;
     background-image: url("../img/main-bg.png");
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    // background-size: 62%;
+    background-position: 50% 0%;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -99,18 +100,25 @@ header.sticky {
 }
 
 .man {
-    padding-bottom: 44px;
+    // padding-bottom: 44px;
     &__inner {
-        max-width: 1920px;
-        width: 100%;
-        margin: 0 auto;
-        position: relative;
-        img {
-            position: absolute;
-            left: -3%;
-            transform: translateX(0%);
-            bottom: 0;
-        }
+    //     max-width: 1920px;
+    //     width: 100%;
+    //     margin: 0 auto;
+    //     position: relative;
+    //     img {
+    //         position: absolute;
+    //         left: -3%;
+    //         transform: translateX(0%);
+    //         bottom: 0;
+    //     }
+
+    background-image: url(../img/man-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0 left -1.5%;
+    background-size: 960px;
+    max-width: 1920px;
+    margin: 0 auto;
     }
     &__wrapper {
         display: flex;
@@ -140,12 +148,12 @@ header.sticky {
                 font-weight: normal;
                 border-bottom: 1px solid #fff;
                 display: inline-block;
-                margin-bottom: 8px;
+                margin-bottom: 20px;
             }
             p {
                 font-size: 25px;
                 line-height: 29px;
-                margin-bottom: 15px;
+                margin-bottom: 35px;
                 &:last-child {
                     margin-top: 20px;
                     padding: 7px;
@@ -159,7 +167,12 @@ header.sticky {
 }
 
 .key {
-    padding: 40px 0;
+    padding: 80px 0 40px;
+    background-image: url('../img/key-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+    margin: 0 auto;
     &__title {
         padding-bottom: 21px;
         border-bottom: 1px solid #fefefe;
