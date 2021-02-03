@@ -36,7 +36,7 @@ header.sticky {
                     font-weight: 500;
                     font-size: 18px;
                     color: #fff;
-                    &:hover{
+                    &:hover {
                         border-bottom: 1px #fff solid;
                     }
                 }
@@ -102,23 +102,23 @@ header.sticky {
 .man {
     // padding-bottom: 44px;
     &__inner {
-    //     max-width: 1920px;
-    //     width: 100%;
-    //     margin: 0 auto;
-    //     position: relative;
-    //     img {
-    //         position: absolute;
-    //         left: -3%;
-    //         transform: translateX(0%);
-    //         bottom: 0;
-    //     }
+        //     max-width: 1920px;
+        //     width: 100%;
+        //     margin: 0 auto;
+        //     position: relative;
+        //     img {
+        //         position: absolute;
+        //         left: -3%;
+        //         transform: translateX(0%);
+        //         bottom: 0;
+        //     }
 
-    background-image: url(../img/man-bg.png);
-    background-repeat: no-repeat;
-    background-position: bottom 0 left -1.5%;
-    background-size: 960px;
-    max-width: 1920px;
-    margin: 0 auto;
+        background-image: url(../img/man-bg.png);
+        background-repeat: no-repeat;
+        background-position: bottom 0 left -1.5%;
+        background-size: 960px;
+        max-width: 1920px;
+        margin: 0 auto;
     }
     &__wrapper {
         display: flex;
@@ -168,7 +168,7 @@ header.sticky {
 
 .key {
     padding: 80px 0 40px;
-    background-image: url('../img/key-bg.png');
+    background-image: url("../img/key-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1920px;
@@ -400,6 +400,13 @@ header.sticky {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            // img{
+            //     max-height: 172px;
+
+            //     background-image: url('../img/timh-bg.svg');
+            //     background-size: 151px;
+            //     background-repeat: no-repeat;
+            // }
             p {
                 font-size: 14px;
                 line-height: 18px;
@@ -546,7 +553,7 @@ header.sticky {
             margin-top: -25px;
         }
         .block {
-            max-width: 580px;
+            max-width: 590px;
             margin-top: 13px;
             margin-left: 20px;
             h4 {
@@ -556,11 +563,11 @@ header.sticky {
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 24px;
-                max-width: 540px;
+                max-width: 550px;
             }
             p {
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 14px;
+                line-height: 19px;
             }
         }
     }
