@@ -662,6 +662,14 @@ header.sticky {
 }
 .qstn {
     padding-top: 42px;
+    padding-bottom: 650px;
+    background-image: url(../img/qstn-bg.png);
+    background-position: 0% 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+    margin: 0 auto;
+
     &__title {
         max-width: 930px;
         text-align: center;
@@ -713,14 +721,25 @@ header.sticky {
 }
 
 .about {
-    padding-top: 300px;
+    position: relative;
+    // padding-top: 100px;
     padding-bottom: 30px;
-    background-image: url(../img/about-bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 1988px;
+    // background-image: url(../img/about-bg.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // max-width: 1988px;
+    // margin: 0 auto;
+   top: -500px;
+    max-width: 1920px;
     margin: 0 auto;
-    margin-top: -200px;
+    .abbg{
+        top: -150px;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     &__title {
         text-align: center;
     }
@@ -759,6 +778,8 @@ header.sticky {
     }
 }
 .map {
+    position: relative;
+    top: -500px;
     padding: 50px;
     background-image: url(../img/map-bg.jpg);
     background-repeat: no-repeat;
@@ -797,7 +818,9 @@ header.sticky {
 }
 
 .footer {
-    padding: 70px 0;
+    // padding: 70px 0;
+    margin-top: -430px;
+    margin-bottom: 70px;
     &__inner {
         display: flex;
         justify-content: space-between;
