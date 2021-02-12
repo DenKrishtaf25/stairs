@@ -381,17 +381,17 @@
         &__wrapper {
             &-right {
                 .text {
-                    p{
+                    p {
                         font-size: 10px;
                     }
-                     .bord {
-                         padding-bottom: 1px;
+                    .bord {
+                        padding-bottom: 1px;
                         &::after {
                             width: 175px;
                         }
                     }
                 }
-                h3{
+                h3 {
                     font-size: 12px;
                     margin-bottom: 0px;
                 }
@@ -404,22 +404,82 @@
         }
     }
     @media (max-width: 480px) {
-        &__wrapper{
-            &-right{
+        &__wrapper {
+            &-right {
                 .text {
                     max-width: 200px;
-                    p{
+                    p {
                         font-size: 8px;
                         margin-bottom: -6px;
                     }
-                     .bord {
-                         padding-bottom: 0px;
-                         margin-bottom: -2px;
+                    .bord {
+                        padding-bottom: 0px;
+                        margin-bottom: -2px;
                         &::after {
                             width: 140px;
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.key {
+    @media (max-width: 991px) {
+        &__title {
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+        &__inner {
+            grid-template-columns: repeat(2, 306px);
+            justify-content: space-around;
+            grid-row-gap: 18px;
+        }
+        &__box {
+            img {
+                margin-bottom: 14px;
+            }
+            h3 {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+    @media (max-width: 700px) {
+        padding: 40px 0 20px;
+        &__title {
+            font-size: 20px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        &__inner {
+            grid-template-columns: repeat(2, 210px);
+            justify-content: space-around;
+            grid-row-gap: 18px;
+        }
+        &__box {
+            img {
+                margin-bottom: 14px;
+                max-width: 210px;
+            }
+            h3 {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+    @media (max-width: 480px) {
+         &__inner {
+            grid-template-columns: repeat(2, 150px);
+            justify-content: space-around;
+            grid-row-gap: 18px;
+        }
+        &__box {
+            img {
+                margin-bottom: 14px;
+                max-width: 150px;
             }
         }
     }
