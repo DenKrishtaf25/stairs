@@ -82,12 +82,10 @@ header.sticky {
 }
 
 .main {
-    //  padding-bottom: 80px;
     height: 100vh;
     max-height: 1180px;
     background-image: url(../img/main-bg.png);
     background-repeat: no-repeat;
-    // background-size: 62%;
     background-position: 5% 110%;
     max-width: 1400px;
     margin: 0 auto;
@@ -153,43 +151,59 @@ header.sticky {
         display: flex;
         justify-content: space-between;
         padding-top: 40px;
-        &-left {
-            padding-top: 70px;
+        .text {
             p {
                 font-size: 15px;
                 line-height: 18px;
                 margin-bottom: 8px;
                 text-align: right;
-                &:nth-child(2n) {
-                    border-bottom: 1px solid #fff;
-                    padding-bottom: 8px;
-                    display: inline-block;
-                    float: right;
-                    justify-content: flex-end;
+            }
+            .bord {
+                position: relative;
+                padding-bottom: 8px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 260px;
+                    height: 1px;
+                    background-color: #fff;
                 }
             }
         }
+        &-left {
+            padding-top: 40px;
+        }
         &-right {
+            .text {
+                p {
+                    display: none;
+                }
+            }
+            img {
+                display: none;
+            }
             max-width: 665px;
             h3 {
                 font-size: 25px;
                 line-height: 29px;
                 font-weight: normal;
-                border-bottom: 1px solid #fff;
-                display: inline-block;
                 margin-bottom: 20px;
+                span {
+                    border-bottom: 1px solid #fff;
+                }
             }
             p {
                 font-size: 25px;
                 line-height: 29px;
                 margin-bottom: 35px;
-                &:last-child {
-                    margin-top: 20px;
-                    padding: 7px;
-                    box-shadow: inset 0px 0px 13px 3px rgba(213, 175, 78, 0.37),
-                        0px 0px 13px 3px rgba(213, 175, 78, 0.37);
-                    border-radius: 17px;
-                }
+            }
+            .hriso {
+                margin-top: 20px;
+                padding: 7px;
+                box-shadow: inset 0px 0px 13px 3px rgba(213, 175, 78, 0.37), 0px 0px 13px 3px rgba(213, 175, 78, 0.37);
+                border-radius: 17px;
             }
         }
     }
